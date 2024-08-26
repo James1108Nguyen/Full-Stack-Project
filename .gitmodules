@@ -2,3 +2,6 @@
 [submodule "HTMLCSS/The-Coffee-Shop"]
 	path = HTMLCSS/The-Coffee-Shop
 	url = https://github.com/James1108Nguyen/The-Coffee-Shop.git
+[submodule "HTMLCSS/W3-Band-Website-Project"]
+	path = HTMLCSS/W3-Band-Website-Project
+	url = https://github.com/James1108Nguyen/W3-Band-Website-Project.git
