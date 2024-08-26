@@ -1,0 +1,24 @@
+body > .container {
+  position: relative;
+  left: 0;
+  margin-left: 400px;
+  width: 800px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #333;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  align-items: flex-start;
+}
+
+.item {
+  /* flex: 1 0 100px; Grow: 1, Shrink: 0, Basis: 150px */
+  background-color: lightblue;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 50px;
+  border: 1px solid #333;
+}
