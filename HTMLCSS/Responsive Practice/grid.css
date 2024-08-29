@@ -1,15 +1,6 @@
-/* 
-Các bước
-1. Grid
-2. tạo row
-3. tạo column
-4. tạo offset
-5. Thêm no gutter
-*/
-
 .grid {
-  display: block;
   width: 100%;
+  display: block;
   padding: 0;
 }
 
@@ -24,7 +15,8 @@ Các bước
   margin-left: -4px;
   margin-right: -4px;
 }
-.row.no-gutter {
+
+.row.no-gutters {
   margin-left: 0;
   margin-right: 0;
 }
@@ -34,24 +26,9 @@ Các bước
   padding-right: 4px;
 }
 
-.row.no-gutter .col {
+.row.no-gutters .col {
   padding-left: 0;
   padding-right: 0;
-}
-
-.c-1,
-.c-2,
-.c-3,
-.c-4,
-.c-5,
-.c-6,
-.c-7,
-.c-8,
-.c-9,
-.c-10,
-.c-11,
-.c-12 {
-  display: block;
 }
 
 .c-0 {
@@ -59,13 +36,13 @@ Các bước
 }
 
 .c-1 {
-  flex: 0 0 8, 33333%;
-  max-width: 8, 33333%;
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
 }
 
 .c-2 {
-  flex: 0 0 16, 66667%;
-  max-width: 16, 66667%;
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
 }
 
 .c-3 {
@@ -74,27 +51,28 @@ Các bước
 }
 
 .c-4 {
-  flex: 0 0 33, 33333%;
-  max-width: 33, 33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
 }
 
 .c-5 {
-  flex: 0 0 41, 66667%;
-  max-width: 41, 66667%;
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
 }
+
 .c-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
 .c-7 {
-  flex: 0 0 58, 33333%;
-  max-width: 58, 33333%;
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
 }
 
 .c-8 {
-  flex: 0 0 66, 66667%;
-  max-width: 66, 66667%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
 }
 
 .c-9 {
@@ -103,13 +81,13 @@ Các bước
 }
 
 .c-10 {
-  flex: 0 0 83, 33333%;
-  max-width: 83, 33333%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
 }
 
 .c-11 {
-  flex: 0 0 91, 66667%;
-  max-width: 91, 66667%;
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
 }
 
 .c-12 {
@@ -118,11 +96,11 @@ Các bước
 }
 
 .c-o-1 {
-  margin-left: 8, 33333%;
+  margin-left: 8.33333%;
 }
 
 .c-o-2 {
-  margin-left: 16, 66667%;
+  margin-left: 16.66667%;
 }
 
 .c-o-3 {
@@ -130,22 +108,23 @@ Các bước
 }
 
 .c-o-4 {
-  margin-left: 33, 33333%;
+  margin-left: 33.33333%;
 }
 
 .c-o-5 {
-  margin-left: 41, 66667%;
+  margin-left: 41.66667%;
 }
+
 .c-o-6 {
   margin-left: 50%;
 }
 
 .c-o-7 {
-  margin-left: 58, 33333%;
+  margin-left: 58.33333%;
 }
 
 .c-o-8 {
-  margin-left: 66, 66667%;
+  margin-left: 66.66667%;
 }
 
 .c-o-9 {
@@ -153,11 +132,11 @@ Các bước
 }
 
 .c-o-10 {
-  margin-left: 83, 33333%;
+  margin-left: 83.33333%;
 }
 
 .c-o-11 {
-  margin-left: 91, 66667%;
+  margin-left: 91.66667%;
 }
 
 /* >= Tablet */
@@ -166,6 +145,7 @@ Các bước
     margin-left: -8px;
     margin-right: -8px;
   }
+
   .col {
     padding-left: 8px;
     padding-right: 8px;
@@ -191,13 +171,13 @@ Các bước
   }
 
   .m-1 {
-    flex: 0 0 8, 33333%;
-    max-width: 8, 33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
   }
 
   .m-2 {
-    flex: 0 0 16, 66667%;
-    max-width: 16, 66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
   }
 
   .m-3 {
@@ -206,27 +186,28 @@ Các bước
   }
 
   .m-4 {
-    flex: 0 0 33, 33333%;
-    max-width: 33, 33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
   }
 
   .m-5 {
-    flex: 0 0 41, 66667%;
-    max-width: 41, 66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
   }
+
   .m-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
   .m-7 {
-    flex: 0 0 58, 33333%;
-    max-width: 58, 33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
   }
 
   .m-8 {
-    flex: 0 0 66, 66667%;
-    max-width: 66, 66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
   }
 
   .m-9 {
@@ -235,25 +216,26 @@ Các bước
   }
 
   .m-10 {
-    flex: 0 0 83, 33333%;
-    max-width: 83, 33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
 
   .m-11 {
-    flex: 0 0 91, 66667%;
-    max-width: 91, 66667%;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
   }
+
   .m-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
   .m-o-1 {
-    margin-left: 8, 33333%;
+    margin-left: 8.33333%;
   }
 
   .m-o-2 {
-    margin-left: 16, 66667%;
+    margin-left: 16.66667%;
   }
 
   .m-o-3 {
@@ -261,22 +243,23 @@ Các bước
   }
 
   .m-o-4 {
-    margin-left: 33, 33333%;
+    margin-left: 33.33333%;
   }
 
   .m-o-5 {
-    margin-left: 41, 66667%;
+    margin-left: 41.66667%;
   }
+
   .m-o-6 {
     margin-left: 50%;
   }
 
   .m-o-7 {
-    margin-left: 58, 33333%;
+    margin-left: 58.33333%;
   }
 
   .m-o-8 {
-    margin-left: 66, 66667%;
+    margin-left: 66.66667%;
   }
 
   .m-o-9 {
@@ -284,29 +267,31 @@ Các bước
   }
 
   .m-o-10 {
-    margin-left: 83, 33333%;
+    margin-left: 83.33333%;
   }
 
   .m-o-11 {
-    margin-left: 91, 66667%;
+    margin-left: 91.66667%;
   }
 }
 
-/* > Medium */
-
+/* PC medium resolution > */
 @media (min-width: 1113px) {
   .row {
     margin-left: -12px;
     margin-right: -12px;
   }
+
   .row.sm-gutter {
     margin-left: -5px;
     margin-right: -5px;
   }
+
   .col {
     padding-left: 12px;
     padding-right: 12px;
   }
+
   .row.sm-gutter .col {
     padding-left: 5px;
     padding-right: 5px;
@@ -318,6 +303,7 @@ Các bước
 
   .l-1,
   .l-2,
+  .l-2-4,
   .l-3,
   .l-4,
   .l-5,
@@ -332,13 +318,18 @@ Các bước
   }
 
   .l-1 {
-    flex: 0 0 8, 33333%;
-    max-width: 8, 33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
   }
 
   .l-2 {
-    flex: 0 0 16, 66667%;
-    max-width: 16, 66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .l-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 
   .l-3 {
@@ -347,27 +338,28 @@ Các bước
   }
 
   .l-4 {
-    flex: 0 0 33, 33333%;
-    max-width: 33, 33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
   }
 
   .l-5 {
-    flex: 0 0 41, 66667%;
-    max-width: 41, 66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
   }
+
   .l-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
   .l-7 {
-    flex: 0 0 58, 33333%;
-    max-width: 58, 33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
   }
 
   .l-8 {
-    flex: 0 0 66, 66667%;
-    max-width: 66, 66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
   }
 
   .l-9 {
@@ -376,24 +368,26 @@ Các bước
   }
 
   .l-10 {
-    flex: 0 0 83, 33333%;
-    max-width: 83, 33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
 
   .l-11 {
-    flex: 0 0 91, 66667%;
-    max-width: 91, 66667%;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
   }
+
   .l-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   .l-o-1 {
-    margin-left: 8, 33333%;
+    margin-left: 8.33333%;
   }
 
   .l-o-2 {
-    margin-left: 16, 66667%;
+    margin-left: 16.66667%;
   }
 
   .l-o-3 {
@@ -401,22 +395,23 @@ Các bước
   }
 
   .l-o-4 {
-    margin-left: 33, 33333%;
+    margin-left: 33.33333%;
   }
 
   .l-o-5 {
-    margin-left: 41, 66667%;
+    margin-left: 41.66667%;
   }
+
   .l-o-6 {
     margin-left: 50%;
   }
 
   .l-o-7 {
-    margin-left: 58, 33333%;
+    margin-left: 58.33333%;
   }
 
   .l-o-8 {
-    margin-left: 66, 66667%;
+    margin-left: 66.66667%;
   }
 
   .l-o-9 {
@@ -424,26 +419,22 @@ Các bước
   }
 
   .l-o-10 {
-    margin-left: 83, 33333%;
+    margin-left: 83.33333%;
   }
 
   .l-o-11 {
-    margin-left: 91, 66667%;
-  }
-
-  .l-o-12 {
-    margin-left: 100%;
+    margin-left: 91.66667%;
   }
 }
 
-/* Tablet -> PC low resolution */
+/* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
   .wide {
     width: 644px;
   }
 }
 
-/* PC low ->mid resolution */
+/* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
   .wide {
     width: 984px;
@@ -453,15 +444,17 @@ Các bước
     margin-left: -12px;
     margin-right: -12px;
   }
+
   .wide .row.sm-gutter {
     margin-left: -5px;
     margin-right: -5px;
   }
 
-  .col {
+  .wide .col {
     padding-left: 12px;
     padding-right: 12px;
   }
+
   .wide .row.sm-gutter .col {
     padding-left: 5px;
     padding-right: 5px;
@@ -473,6 +466,7 @@ Các bước
 
   .wide .l-1,
   .wide .l-2,
+  .wide .l-2-4,
   .wide .l-3,
   .wide .l-4,
   .wide .l-5,
@@ -483,18 +477,22 @@ Các bước
   .wide .l-10,
   .wide .l-11,
   .wide .l-12 {
-    padding-left: 4px;
-    padding-right: 4px;
+    display: block;
   }
 
   .wide .l-1 {
-    flex: 0 0 8, 33333%;
-    max-width: 8, 33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
   }
 
   .wide .l-2 {
-    flex: 0 0 16, 66667%;
-    max-width: 16, 66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .wide .l-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 
   .wide .l-3 {
@@ -503,27 +501,28 @@ Các bước
   }
 
   .wide .l-4 {
-    flex: 0 0 33, 33333%;
-    max-width: 33, 33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
   }
 
   .wide .l-5 {
-    flex: 0 0 41, 66667%;
-    max-width: 41, 66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
   }
+
   .wide .l-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
   .wide .l-7 {
-    flex: 0 0 58, 33333%;
-    max-width: 58, 33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
   }
 
   .wide .l-8 {
-    flex: 0 0 66, 66667%;
-    max-width: 66, 66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
   }
 
   .wide .l-9 {
@@ -532,25 +531,26 @@ Các bước
   }
 
   .wide .l-10 {
-    flex: 0 0 83, 33333%;
-    max-width: 83, 33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
 
   .wide .l-11 {
-    flex: 0 0 91, 66667%;
-    max-width: 91, 66667%;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
   }
+
   .wide .l-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
   .wide .l-o-1 {
-    margin-left: 8, 33333%;
+    margin-left: 8.33333%;
   }
 
   .wide .l-o-2 {
-    margin-left: 16, 66667%;
+    margin-left: 16.66667%;
   }
 
   .wide .l-o-3 {
@@ -558,22 +558,23 @@ Các bước
   }
 
   .wide .l-o-4 {
-    margin-left: 33, 33333%;
+    margin-left: 33.33333%;
   }
 
   .wide .l-o-5 {
-    margin-left: 41, 66667%;
+    margin-left: 41.66667%;
   }
+
   .wide .l-o-6 {
     margin-left: 50%;
   }
 
   .wide .l-o-7 {
-    margin-left: 58, 33333%;
+    margin-left: 58.33333%;
   }
 
   .wide .l-o-8 {
-    margin-left: 66, 66667%;
+    margin-left: 66.66667%;
   }
 
   .wide .l-o-9 {
@@ -581,14 +582,10 @@ Các bước
   }
 
   .wide .l-o-10 {
-    margin-left: 83, 33333%;
+    margin-left: 83.33333%;
   }
 
   .wide .l-o-11 {
-    margin-left: 91, 66667%;
-  }
-
-  .wide .l-o-12 {
-    margin-left: 100%;
+    margin-left: 91.66667%;
   }
 }
