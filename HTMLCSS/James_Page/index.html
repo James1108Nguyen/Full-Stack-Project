@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" scale />
-  <title>James's Lab</title>
-  <link rel="stylesheet" href="./assets/css/grid.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <header>
-    <div class="nav">
-      <ul class="nav__list">
-        <li class="nav__item nav__item--logo">
-          <img src="./assets/images/logo.png" alt="James's Protable Lab" />
-        </li>
-        <li class="nav__item"><a href="#">About me</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      scale
+    />
+    <title>James's Lab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&subnet=vietnamese"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="grid">
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <img
+                class="nav__list-item-logo"
+                src="./assets/images/logo.png"
+                alt="James's Portable Lab"
+              />
+            </li>
+            <li class="nav__list-item"><a href="#">About me</a></li>
 
-        <li class="nav__item"><a href="#">Project</a></li>
+            <li class="nav__list-item"><a href="#">Project</a></li>
 
-        <li class="nav__item"><a href="#">Skills</a></li>
+            <li class="nav__list-item"><a href="#">Skills</a></li>
 
-        <li class="nav__item"><a href="#">Education</a></li>
+            <li class="nav__list-item"><a href="#">Education</a></li>
 
-        <li class="nav__item"><a href="#">Contact</a></li>
+            <li class="nav__list-item"><a href="#">Contact me</a></li>
 
-        <li class="nav__item time-container">
-          <div class="time-container__location stretched-text">
-            Hồ Chí Minh City, Vietnam
-          </div>
-          <div class="time-container__time" id="time">--:--:-- --</div>
-          <div id="weather" class="time-container__weather">Loading...</div>
-        </li>
-      </ul>
+            <li class="nav__list-item-local">
+              <div class="local-info">
+                <div class="local-info__location">
+                  Ho Chi Minh City, Vietnam
+                </div>
+                <div class="local-info__time" id="time">--:--:-- --</div>
+                <div class="local-info__weather">
+                  <img
+                    src="./assets/images/cloudy.png"
+                    height="16px"
+                    width="auto"
+                    class="local-info__weather-icon"
+                  />
+                  <div id="weather" class="local-info__weather-description">
+                    Loading...
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </header>
+    <div class="content"></div>
+
+    <div class="footer"></div>
+  </body>
   <script src="./scripts/script.js"></script>
-  <body></body>
 </html>
