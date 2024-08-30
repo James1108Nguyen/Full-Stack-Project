@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+  --main-background-color: #f5f5f0;
+}
+
+.nav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #fffedb;
+}
+
+.nav__item {
+  flex: 0 0 10%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+.nav__item + .nav__item {
+  margin-left: 10px;
+}
+
+.nav__item a {
+  margin: auto;
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav__item.nav__item--logo {
+}
+
+.nav__item--logo img {
+  height: 28px;
+  width: auto;
+  margin: auto;
+}
+
+.time-container {
+  flex-basis: 30%;
+  display: flex;
+  flex-flow: column;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: end;
+}
+
+.time-container__location {
+  color: #666;
+  font-size: 1.3rem; /* Kích thước nhỏ hơn để hiển thị địa điểm */
+}
+
+.time-container__time,
+.time-container__weather {
+  font-size: 1.5rem; /* Kích thước lớn hơn để hiển thị thời gian */
+  font-weight: bold;
+  color: #484848;
+  letter-spacing: 0.5px;
+}
