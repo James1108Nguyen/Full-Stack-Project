@@ -18,6 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&subnet=vietnamese"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/animations.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -53,7 +58,7 @@
                 <div class="local-info__weather">
                   <img
                     src="./assets/images/cloudy.png"
-                    height="16px"
+                    height="15px"
                     width="auto"
                     class="local-info__weather-icon"
                   />
@@ -67,8 +72,79 @@
         </div>
       </div>
     </div>
-    <div class="content"></div>
-
+    <div class="content">
+      <div class="grid wide">
+        <div class="row section-1 about-me">
+          <!-- Info -->
+          <div class="col l-7 m-12 c-12">
+            <div class="row about-me__item">
+              <div class="col l-12 m-12 c-12">
+                <div class="about-me__info">
+                  <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__h1 animate__fadeInLeft">Hi!</div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__name">
+                        <div class="info__name-small">I'm</div>
+                        <div class="info__name-lagre">Nguyen Ngoc Thinh</div>
+                      </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__job">A Web Developer</div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__detail">
+                        Call me James.
+                        <br />
+                        Constantly learning and perfecting skills with attention
+                        to detail and precision!
+                      </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__contact">
+                        <div class="row">
+                          <div class="col l-12 m-12 c-12">
+                            <i
+                              class="fas fa-location-arrow info__contact-icon"
+                            ></i>
+                            <div class="info__contact-address">
+                              Ho Chi Minh City
+                            </div>
+                          </div>
+                          <div class="col l-12 m-12 c-12">
+                            <i class="fas fa-phone info__contact-icon"></i>
+                            <div class="info__contact-phone">0364404072</div>
+                          </div>
+                          <div class="col l-12 m-12 c-12">
+                            <i class="fas fa-at info__contact-icon"></i>
+                            <div class="info__contact-email">
+                              nguyenngocthinh01@gmail.com
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__item-btn">
+                        <div class="btn btn--white">My Résumé</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="col l-5 m-12 c-12">
+            <div class="row about-me__item">
+              <div class="col l-8 m-9 c-10 about-me__image"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row section-1 skill"></div>
+      </div>
+    </div>
     <div class="footer"></div>
   </body>
   <script src="./scripts/script.js"></script>
