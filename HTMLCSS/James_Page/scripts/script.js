@@ -87,6 +87,7 @@ function updateWeather() {
   console.log(temperature);
   const weatherElement = document.getElementById("weather");
   weatherElement.textContent = `${temperature}°C`;
+  weatherElement.style.color = "#333";
 }
 
 // Gọi hàm updateWeather khi trang được tải

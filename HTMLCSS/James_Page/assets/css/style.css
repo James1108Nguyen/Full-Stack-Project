@@ -15,6 +15,7 @@
   height: 100%;
   background-color: #ffffff;
   padding-left: 0;
+  border: 1px solid #ccc;
 }
 
 .nav__list-item {
@@ -36,17 +37,19 @@
   text-decoration: none;
 }
 .nav__list-item img {
-  padding: 16px 0;
+  padding: 14px 0;
 }
 
 .nav__list-item-local {
   flex: 0 0 30%;
+  height: 100%;
 }
 .local-info {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: end;
+  height: 100%;
 }
 
 .local-info__location {
@@ -69,6 +72,9 @@
 .local-info__weather {
   display: flex;
 }
-.local-info__weather > .local-info__weather-icon {
+.local-info__weather-icon {
   margin-right: 10px;
+}
+.local-info__weather-description {
+  color: #ababab;
 }
