@@ -26,7 +26,7 @@
   padding-right: 4px;
 }
 
-.row.no-gutters .col {
+.row.no-gutters > .col {
   padding-left: 0;
   padding-right: 0;
 }

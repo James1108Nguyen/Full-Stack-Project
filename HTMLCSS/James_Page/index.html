@@ -25,36 +25,34 @@
     <link rel="stylesheet" href="./assets/css/animations.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <div class="header">
-      <div class="grid">
+      <div class="grid wide">
         <div class="nav">
           <ul class="nav__list">
-            <li class="nav__list-item">
-              <img
-                class="nav__list-item-logo"
-                src="./assets/images/logo.png"
-                alt="James's Portable Lab"
-              />
+            <li class="nav-list__item-logo">
+              <img src="./assets/images/logo.png" alt="James's Portable Lab" />
             </li>
-            <li class="nav__list-item"><a href="#">About me</a></li>
+            <li class="nav-list__item"><a href="#">About me</a></li>
 
-            <li class="nav__list-item"><a href="#">Project</a></li>
+            <li class="nav-list__item"><a href="#">Project</a></li>
 
-            <li class="nav__list-item"><a href="#">Skills</a></li>
+            <li class="nav-list__item"><a href="#">Skills</a></li>
 
-            <li class="nav__list-item"><a href="#">Education</a></li>
+            <li class="nav-list__item"><a href="#">Education</a></li>
 
-            <li class="nav__list-item"><a href="#">Contact me</a></li>
+            <li class="nav-list__item"><a href="#">Contact me</a></li>
 
-            <li class="nav__list-item-local">
+            <li class="nav-list__item-local">
               <div class="local-info">
                 <div class="local-info__location">
                   Ho Chi Minh City, Vietnam
                 </div>
-                <div class="local-info__time" id="time">--:--:-- --</div>
+                <div class="local-info__time" id="time">00:00:00 -M</div>
                 <div class="local-info__weather">
                   <img
                     src="./assets/images/cloudy.png"
@@ -63,7 +61,7 @@
                     class="local-info__weather-icon"
                   />
                   <div id="weather" class="local-info__weather-description">
-                    Loading...
+                    00.0°C
                   </div>
                 </div>
               </div>
@@ -76,59 +74,55 @@
       <div class="grid wide">
         <div class="row section-1 about-me">
           <!-- Info -->
-          <div class="col l-7 m-12 c-12">
+          <div class="col l-7 m-6 c-12">
             <div class="row about-me__item">
-              <div class="col l-12 m-12 c-12">
-                <div class="about-me__info">
-                  <div class="row">
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__h1 animate__fadeInLeft">Hi!</div>
+              <div class="col l-12 m-12 c-10">
+                <div class="row about-me__info">
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__h1">Hi!</div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__name">
+                      <div class="info__name-small">I'm</div>
+                      <div class="info__name-lagre">Nguyen Ngoc Thinh</div>
                     </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__name">
-                        <div class="info__name-small">I'm</div>
-                        <div class="info__name-lagre">Nguyen Ngoc Thinh</div>
-                      </div>
-                    </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__job">A Web Developer</div>
-                    </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__detail">
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__job">A Web Developer</div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__detail">
+                      <p>
                         Call me James.
                         <br />
                         Constantly learning and perfecting skills with attention
-                        to detail and precision!
-                      </div>
+                        to detail and precision and and!
+                      </p>
                     </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__contact">
-                        <div class="row">
-                          <div class="col l-12 m-12 c-12">
-                            <i
-                              class="fas fa-location-arrow info__contact-icon"
-                            ></i>
-                            <div class="info__contact-address">
-                              Ho Chi Minh City
-                            </div>
-                          </div>
-                          <div class="col l-12 m-12 c-12">
-                            <i class="fas fa-phone info__contact-icon"></i>
-                            <div class="info__contact-phone">0364404072</div>
-                          </div>
-                          <div class="col l-12 m-12 c-12">
-                            <i class="fas fa-at info__contact-icon"></i>
-                            <div class="info__contact-email">
-                              nguyenngocthinh01@gmail.com
-                            </div>
-                          </div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="grid info__contact">
+                      <div class="col l-12 m-12 c-12">
+                        <i class="fas fa-location-arrow info__contact-icon"></i>
+                        <div class="info__contact-address">
+                          Ho Chi Minh City
+                        </div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <i class="fas fa-phone info__contact-icon"></i>
+                        <div class="info__contact-phone">0364404072</div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <i class="fas fa-at info__contact-icon"></i>
+                        <div class="info__contact-email">
+                          nguyenngocthinh01@gmail.com
                         </div>
                       </div>
                     </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__item-btn">
-                        <div class="btn btn--white">My Résumé</div>
-                      </div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__item-btn">
+                      <div class="btn btn--white">My Résumé</div>
                     </div>
                   </div>
                 </div>
@@ -136,13 +130,32 @@
             </div>
           </div>
           <!-- Image -->
-          <div class="col l-5 m-12 c-12">
+          <div class="col l-5 m-6 c-12">
             <div class="row about-me__item">
-              <div class="col l-8 m-9 c-10 about-me__image"></div>
+              <div class="col l-8 m-11 c-10 about-me__image"></div>
             </div>
           </div>
         </div>
-        <div class="row section-1 skill"></div>
+        <div class="row section-2 skill">
+          <div class="col l-12 m-12 c-12">
+            <div class="row skill__item">
+              <div class="col l-12 m-12 c-12">
+                <div class="skill__title">My Skills</div>
+              </div>
+              <div class="col l-12 m-12 c-12">
+                <div class="row skill__list">
+                  <div class="col l-4 m-6 c-12">
+                    <div class="skill__item">
+                      <div class="skill__item-icon">
+                        <i class="fab fa-html5"></i>
+                      </div>
+                      <div class="skill__item-name">HTML</div>
+                    </div>
+                  </div>
+                  <div class="col l-4 m-6 c-12">
+                    <div class="skill__item">
+                      <
+        </div>
       </div>
     </div>
     <div class="footer"></div>
