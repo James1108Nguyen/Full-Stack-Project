@@ -15,18 +15,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&subnet=vietnamese"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght
+            @0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900
+            &display=swap&subnet=vietnamese"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+            6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/animations.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/section-2.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
@@ -41,7 +45,7 @@
 
             <li class="nav-list__item"><a href="#">Project</a></li>
 
-            <li class="nav-list__item"><a href="#">Skills</a></li>
+            <li class="nav-list__item"><a href="#skills">Skills</a></li>
 
             <li class="nav-list__item"><a href="#">Education</a></li>
 
@@ -136,25 +140,90 @@
             </div>
           </div>
         </div>
-        <div class="row section-2 skill">
+        <div id="skills" class="row no-gutters section-2 skills">
           <div class="col l-12 m-12 c-12">
-            <div class="row skill__item">
-              <div class="col l-12 m-12 c-12">
-                <div class="skill__title">My Skills</div>
-              </div>
-              <div class="col l-12 m-12 c-12">
-                <div class="row skill__list">
-                  <div class="col l-4 m-6 c-12">
-                    <div class="skill__item">
-                      <div class="skill__item-icon">
-                        <i class="fab fa-html5"></i>
-                      </div>
-                      <div class="skill__item-name">HTML</div>
-                    </div>
+            <div class="skills-heading">My Skill</div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="skills-card">
+              HTML/CSS
+              <div class="progress-circle" id="html-css-process">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number">0%</div>
                   </div>
-                  <div class="col l-4 m-6 c-12">
-                    <div class="skill__item">
-                      <
+                </div>
+                <svg>
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#08ffe2; stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="skills-card">Javascript
+              <div class="progress-circle" id="js-process">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number">0%</div>
+                  </div>
+                </div>
+                <svg>
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#f6b69a; stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="skills-card">React Native
+              <div class="progress-circle" id="react-native-process">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number">0%</div>
+                  </div>
+                </div>
+                <svg>
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#f6b69a; stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
+                    </linearGradient>
+                  </defs>                  
+                  <circle cx="80" cy="80" r="70"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="skills-card">Nodejs<
+              <div class="progress-circle" id="nodejs-process">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="number">0%</div>
+                  </div>
+                </div>
+                <svg>
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#f6b69a; stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70"></circle>
+                </svg>
+              </div>
+          </div>
         </div>
       </div>
     </div>

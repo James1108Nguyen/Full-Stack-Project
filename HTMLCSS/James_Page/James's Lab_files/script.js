@@ -99,9 +99,9 @@ window.onload = function () {
 setInterval(updateWeather, 6000000);
 
 // Process funcition (section2-skills)
-function initProgressCircle(skill, progressPercent) {
-  let circle = document.querySelector(`#${skill}-process circle`);
-  let number = document.querySelector(`#${skill}-process .number`);
+function initProgressCircle(elementId, progressPercent) {
+  let circle = document.querySelector(`#${elementId} circle`);
+  let number = document.querySelector(`#${elementId} .number`);
   let counter = 0;
   let increment = true;
   let hasExceeded = false;
@@ -143,7 +143,4 @@ function initProgressCircle(skill, progressPercent) {
 }
 
 // Khởi tạo tiến trình cho các kỹ năng
-initProgressCircle("html-css", 68); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
-initProgressCircle("js", 80); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
-initProgressCircle("nodejs", 68); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
-initProgressCircle("react-native", 68); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
+initProgressCircle("html-css-process", 65, 75); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
