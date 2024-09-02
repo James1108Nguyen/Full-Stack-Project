@@ -2,6 +2,9 @@
   --first-primary-color: #fff;
   --second-primary-color: #f7eee3;
 }
+.space-between {
+  justify-content: space-between !important;
+}
 
 .header {
   position: fixed;

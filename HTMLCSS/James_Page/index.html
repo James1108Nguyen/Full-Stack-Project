@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/section-2.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
@@ -75,71 +77,68 @@
         </div>
       </div>
     </div>
-    <div class="content">
-      <div id="about-me">
-        <div class="grid wide">
-          <div class="row section-1 about-me">
-            <div class="col l-7 m-6 c-12">
-              <div class="row about-me__item">
-                <div class="col l-12 m-12 c-10">
-                  <div class="row about-me__info">
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__h1">Hi!</div>
+    <!-- About me -->
+    <div id="about-me">
+      <div class="grid wide">
+        <div class="row section-1 about-me">
+          <div class="col l-7 m-6 c-12">
+            <div class="row about-me__item">
+              <div class="col l-12 m-12 c-10">
+                <div class="row about-me__info">
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__h1">Hi!</div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__name">
+                      <div class="info__name-small">I'm</div>
+                      <div class="info__name-lagre">Nguyen Ngoc Thinh</div>
                     </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__name">
-                        <div class="info__name-small">I'm</div>
-                        <div class="info__name-lagre">Nguyen Ngoc Thinh</div>
-                      </div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__job">A Web Developer</div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__detail">
+                      <p>
+                        Call me James.
+                        <br />
+                        Constantly learning and perfecting skills with attention
+                        to detail and precision and and!
+                      </p>
                     </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__job">A Web Developer</div>
-                    </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__detail">
-                        <p>
-                          Call me James.
-                          <br />
-                          Constantly learning and perfecting skills with
-                          attention to detail and precision and and!
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="grid info__contact">
-                        <div class="col l-12 m-12 c-12">
-                          <i
-                            class="fas fa-location-arrow info__contact-icon"
-                          ></i>
-                          <div class="info__contact-address">
-                            Ho Chi Minh City
-                          </div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="grid info__contact">
+                      <div class="col l-12 m-12 c-12">
+                        <i class="fas fa-location-arrow info__contact-icon"></i>
+                        <div class="info__contact-address">
+                          Ho Chi Minh City
                         </div>
-                        <div class="col l-12 m-12 c-12">
-                          <i class="fas fa-phone info__contact-icon"></i>
-                          <div class="info__contact-phone">0364404072</div>
-                        </div>
-                        <div class="col l-12 m-12 c-12">
-                          <i class="fas fa-at info__contact-icon"></i>
-                          <div class="info__contact-email">
-                            nguyenngocthinh01@gmail.com
-                          </div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <i class="fas fa-phone info__contact-icon"></i>
+                        <div class="info__contact-phone">0364404072</div>
+                      </div>
+                      <div class="col l-12 m-12 c-12">
+                        <i class="fas fa-at info__contact-icon"></i>
+                        <div class="info__contact-email">
+                          nguyenngocthinh01@gmail.com
                         </div>
                       </div>
                     </div>
-                    <div class="col l-12 m-12 c-12">
-                      <div class="info__item-btn">
-                        <div class="btn btn--white">My Résumé</div>
-                      </div>
+                  </div>
+                  <div class="col l-12 m-12 c-12">
+                    <div class="info__item-btn">
+                      <div class="btn btn--white">My Résumé</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col l-5 m-6 c-12">
-              <div class="row about-me__item">
-                <div class="col l-8 m-11 c-10 about-me__image"></div>
-              </div>
+          </div>
+          <div class="col l-5 m-6 c-12">
+            <div class="row about-me__item">
+              <div class="col l-8 m-11 c-10 about-me__image"></div>
             </div>
           </div>
         </div>
@@ -349,12 +348,90 @@
       </div>
     </div>
 
+    <!-- Project -->
+    <div id="project">
+      <div class="grid wide">
+        <div class="row project">
+          <div class="project__card">
+            <img
+              class="project-card-img"
+              src="./assets/images/html-css-project.jpg"
+              alt="HTML & CSS Project"
+            />
+            <div class="project-card-title">HTML & CSS Project</div>
+            <div class="project-card-techlonogy">
+              <div class="tect-tag tag-html">
+                <div class="tag__icon"></div>
+                <div class="tag__name"></div>
+              </div>
+              <div class="tect-tag tag-css">
+                <div class="tag__icon"></div>
+                <div class="tag__name"></div>
+              </div>
+              <div class="tect-tag tag-javascript">
+                <div class="tag__icon"></div>
+                <div class="tag__name"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <div class="footer">
       <div class="grid wide">
-        <div class="col l-12 m-6 c-6"></div>
-        <div class="col l-12 m-6 c-6"></div>
-        <div class="col l-12 m-6 c-6"></div>
+        <div class="row space-between">
+          <div class="col l-6 m-12 c-12">
+            <div class="footer__copyright">
+              <img
+                class="footer__copyright-img"
+                src="./assets/images/logo.png"
+                alt="#"
+              />
+              <div class="footer__copyright-text">
+                Copyright © 2022 Your Company. All rights reserved.
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-3 c-6">
+            <div class="footer__contact">
+              <div class="footer__social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <div class="footer__info">
+                <div class="info__address">
+                  152 Nguyen Van Thuong St, Binh Thanh, Ho Chi Minh City,
+                  VietNam
+                </div>
+                <div class="info__phone">(036) 4404 072</div>
+                <div class="info__email">nguyenngocthinh02@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-2 m-4 c-6">
+            <div class="row footer__section">
+              <div class="col l-12 m-12 c-12">
+                <a href="#about-me">About me</a>
+              </div>
+              <div class="col l-12 m-12 c-12">
+                <a href="#skills">Project</a>
+              </div>
+              <div class="col l-12 m-12 c-12">
+                <a href="#skills">Skill</a>
+              </div>
+              <div class="col l-12 m-12 c-12">
+                <a href="#skills">Education</a>
+              </div>
+              <div class="col l-12 m-12 c-12">
+                <a href="#skills">Contact me</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

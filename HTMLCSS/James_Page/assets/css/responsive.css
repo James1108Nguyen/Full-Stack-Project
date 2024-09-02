@@ -64,6 +64,9 @@
   .about-me__image {
     animation-duration: 2.5s;
   }
+  .footer__copyright {
+    padding-bottom: 40px;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1239px) {
 }
