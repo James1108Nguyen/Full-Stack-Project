@@ -46,6 +46,9 @@
   .about-me__image {
     height: 400px;
   }
+  :root {
+    --process-circle-size: 100px;
+  }
 
   /* Nav bar */
   .nav__list {

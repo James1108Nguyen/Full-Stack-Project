@@ -1,3 +1,7 @@
+:root {
+  --process-circle-size: 160px;
+  --progress-circle-thickness: 10px;
+}
 .section-2 {
   background-color: var(--first-primary-color);
 }
@@ -8,17 +12,21 @@
   padding: 10px;
 }
 .skills-heading {
-  font-size: 2.4rem;
-  padding: 10px;
-  border-left: 3px solid #000;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 25px;
+  height: auto;
+  text-align: center;
+  line-height: normal;
 }
 
 /* process css */
 
 .progress-circle {
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: var(--process-circle-size);
+  height: var(--process-circle-size);
   margin: 0 auto 20px;
 }
 
@@ -36,34 +44,68 @@
 
 .outer {
   border-radius: 50%;
-  background-color: #f9f9f9;
+  background-color: #fafafa38;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.inner {
-  background-color: #ffffff;
-  border-radius: 50%;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+.inner-content {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-evenly;
+  align-items: center;
 }
-
-.number {
-  font-size: 1.5rem;
-  font-weight: bold;
+.inner-content__icon,
+.inner-content__number {
+  flex: 1 1 51%;
+  min-width: 51%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.inner-content__icon > img {
+  width: 25%;
 }
 
 svg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 160px;
-  height: 160px;
+  width: var(--process-circle-size);
+  height: var(--process-circle-size);
 }
 
 circle {
+  cx: calc(var(--process-circle-size) / 2);
+  cy: calc(var(--process-circle-size) / 2);
+  r: calc(
+    var(--process-circle-size) / 2 - var(--progress-circle-thickness) / 2
+  ); /* Tính toán bán kính */
   fill: none;
-  stroke: url(#gradient); /* Chọn màu stroke phù hợp */
-  stroke-width: 20;
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
-  transition: stroke-dashoffset 1s linear;
+  stroke-width: var(
+    --progress-circle-thickness
+  ); /* Đặt độ dày của vòng tròn tiến trình */
+  stroke-dasharray: calc(
+    2 * 3.1415 *
+      (var(--process-circle-size) / 2 - var(--progress-circle-thickness) / 2)
+  ); /* Tổng chiều dài đường tròn */
+  stroke-dashoffset: calc(
+    2 * 3.1415 *
+      (var(--process-circle-size) / 2 - var(--progress-circle-thickness) / 2)
+  ); /* Bắt đầu từ trạng thái ẩn toàn bộ */
+  stroke-linecap: round; /* Bo tròn đầu vòng tròn */
+}
+.skill-card__html {
+  stroke: url(#gradient-html);
+}
+.skill-card__js {
+  stroke: url(#gradient-js);
+}
+.skill-card__react {
+  stroke: url(#gradient-react);
+}
+.skill-card__nodejs {
+  stroke: url(#gradient-nodejs);
+}
+.skill-card__detail {
+  text-align: start;
+  font-size: 1.2rem;
 }

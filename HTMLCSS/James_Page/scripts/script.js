@@ -100,50 +100,104 @@ setInterval(updateWeather, 6000000);
 
 // Process funcition (section2-skills)
 function initProgressCircle(skill, progressPercent) {
+  // Lấy phần tử SVG circle và số phần trăm từ DOM
   let circle = document.querySelector(`#${skill}-process circle`);
-  let number = document.querySelector(`#${skill}-process .number`);
+  let number = document.querySelector(
+    `#${skill}-process .inner-content__number`
+  );
+
+  // Hàm tính toán chu vi và cập nhật các giá trị stroke
+  function updateCircleDimensions() {
+    // Lấy giá trị kích thước và độ dày viền từ CSS
+    let size = getComputedStyle(document.documentElement)
+      .getPropertyValue("--process-circle-size")
+      .trim()
+      .replace("px", ""); // Loại bỏ đơn vị 'px' để tính toán
+
+    let strokeWidth = getComputedStyle(document.documentElement)
+      .getPropertyValue("--progress-circle-thickness")
+      .trim()
+      .replace("px", ""); // Loại bỏ đơn vị 'px' để tính toán
+
+    let radius = size / 2 - strokeWidth / 2; // Tính bán kính dựa trên độ dày viền
+    let circumference = 2 * Math.PI * radius; // Chu vi của vòng tròn
+
+    // Thiết lập các giá trị stroke cho vòng tròn
+    circle.setAttribute("r", radius); // Cập nhật bán kính
+    circle.style.strokeDasharray = `${circumference}`;
+    circle.style.strokeDashoffset = `${circumference}`;
+
+    // Tính toán offset dựa trên giá trị phần trăm hiện tại
+    let offset = circumference - (counter / 100) * circumference;
+    circle.style.strokeDashoffset = offset;
+  }
+
+  // Đặt giá trị ban đầu cho biến điều khiển tiến trình
   let counter = 0;
-  let increment = true;
-  let hasExceeded = false;
-  let maxProgress = 100;
 
   function updateProgress() {
     // Điều chỉnh tốc độ thay đổi dựa trên vị trí hiện tại
-    let speedFactor = increment
-      ? (maxProgress - counter) / 10
-      : (counter - progressPercent) / 10;
+    let speedFactor = (progressPercent - counter) / 10;
     speedFactor = Math.max(speedFactor, 0.5); // Đảm bảo tốc độ không quá nhỏ
 
-    if (increment) {
-      counter += speedFactor;
-    } else {
-      counter -= speedFactor;
-    }
+    // Cập nhật counter dựa trên hướng tăng
+    counter += speedFactor;
 
+    // Hiển thị phần trăm tiến trình
     number.innerHTML = `${Math.round(counter)}%`;
 
-    let offset = 440 - 440 * (counter / 100);
+    // Tính toán và thiết lập offset dựa trên counter hiện tại
+    let size = getComputedStyle(document.documentElement)
+      .getPropertyValue("--process-circle-size")
+      .trim()
+      .replace("px", "");
+    let strokeWidth = getComputedStyle(document.documentElement)
+      .getPropertyValue("--progress-circle-thickness")
+      .trim()
+      .replace("px", "");
+    let radius = size / 2 - strokeWidth / 2;
+    let circumference = 2 * Math.PI * radius;
+    let offset = circumference - (counter / 100) * circumference;
     circle.style.strokeDashoffset = offset;
 
-    if (increment && counter >= maxProgress) {
-      increment = false; // Đổi chiều khi đạt đến giá trị vượt quá
-      hasExceeded = true; // Đánh dấu là đã vượt quá
-    } else if (!increment && counter <= progressPercent) {
-      if (hasExceeded) {
-        return; // Dừng khi đã quay lại và dừng ở giá trị mục tiêu
-      }
+    // Kiểm tra điều kiện để dừng khi đạt đến phần trăm mục tiêu
+    if (counter >= progressPercent) {
+      return; // Dừng khi đã đạt đến giá trị mục tiêu
     }
 
     // Gọi lại hàm để tạo loop
     requestAnimationFrame(updateProgress);
   }
 
-  // Bắt đầu quá trình
+  // Bắt đầu quá trình cập nhật tiến trình
   updateProgress();
+
+  // Lắng nghe sự kiện resize để cập nhật kích thước vòng tròn mà không khởi động lại từ đầu
+  window.addEventListener("resize", updateCircleDimensions);
 }
 
 // Khởi tạo tiến trình cho các kỹ năng
-initProgressCircle("html-css", 68); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
-initProgressCircle("js", 80); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
-initProgressCircle("nodejs", 68); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
-initProgressCircle("react-native", 68); // 65% mục tiêu với 75% vượt quá cho HTML/CSS
+initProgressCircle("html-css", 68);
+initProgressCircle("js", 80);
+initProgressCircle("nodejs", 68);
+initProgressCircle("react-native", 68);
+
+// Ví dụ sử dụng Intersection Observer API
+const section = document.querySelector(".section-2");
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log("Section đã lướt tới!");
+        initProgressCircle("html-css", 68);
+        initProgressCircle("js", 80);
+        initProgressCircle("nodejs", 68);
+        initProgressCircle("react-native", 68);
+      }
+    });
+  },
+  { threshold: 0.5 }
+); // Tỉ lệ phần tử xuất hiện (50%)
+
+observer.observe(section);

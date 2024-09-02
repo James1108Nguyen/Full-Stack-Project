@@ -93,7 +93,6 @@
 /* Content */
 .content {
   background-color: var(--second-primary-color);
-  padding-bottom: 100vh;
 
   /* background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f6eacb 100%); */
   margin-top: var(--header-height);

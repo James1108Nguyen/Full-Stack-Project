@@ -2,16 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      scale
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>James's Lab</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +23,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
             6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/animations.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
-
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/section-2.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
@@ -75,159 +76,287 @@
       </div>
     </div>
     <div class="content">
-      <div class="grid wide">
-        <div class="row section-1 about-me">
-          <!-- Info -->
-          <div class="col l-7 m-6 c-12">
-            <div class="row about-me__item">
-              <div class="col l-12 m-12 c-10">
-                <div class="row about-me__info">
-                  <div class="col l-12 m-12 c-12">
-                    <div class="info__h1">Hi!</div>
-                  </div>
-                  <div class="col l-12 m-12 c-12">
-                    <div class="info__name">
-                      <div class="info__name-small">I'm</div>
-                      <div class="info__name-lagre">Nguyen Ngoc Thinh</div>
+      <div id="about-me">
+        <div class="grid wide">
+          <div class="row section-1 about-me">
+            <div class="col l-7 m-6 c-12">
+              <div class="row about-me__item">
+                <div class="col l-12 m-12 c-10">
+                  <div class="row about-me__info">
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__h1">Hi!</div>
                     </div>
-                  </div>
-                  <div class="col l-12 m-12 c-12">
-                    <div class="info__job">A Web Developer</div>
-                  </div>
-                  <div class="col l-12 m-12 c-12">
-                    <div class="info__detail">
-                      <p>
-                        Call me James.
-                        <br />
-                        Constantly learning and perfecting skills with attention
-                        to detail and precision and and!
-                      </p>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__name">
+                        <div class="info__name-small">I'm</div>
+                        <div class="info__name-lagre">Nguyen Ngoc Thinh</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col l-12 m-12 c-12">
-                    <div class="grid info__contact">
-                      <div class="col l-12 m-12 c-12">
-                        <i class="fas fa-location-arrow info__contact-icon"></i>
-                        <div class="info__contact-address">
-                          Ho Chi Minh City
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__job">A Web Developer</div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__detail">
+                        <p>
+                          Call me James.
+                          <br />
+                          Constantly learning and perfecting skills with
+                          attention to detail and precision and and!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="grid info__contact">
+                        <div class="col l-12 m-12 c-12">
+                          <i
+                            class="fas fa-location-arrow info__contact-icon"
+                          ></i>
+                          <div class="info__contact-address">
+                            Ho Chi Minh City
+                          </div>
+                        </div>
+                        <div class="col l-12 m-12 c-12">
+                          <i class="fas fa-phone info__contact-icon"></i>
+                          <div class="info__contact-phone">0364404072</div>
+                        </div>
+                        <div class="col l-12 m-12 c-12">
+                          <i class="fas fa-at info__contact-icon"></i>
+                          <div class="info__contact-email">
+                            nguyenngocthinh01@gmail.com
+                          </div>
                         </div>
                       </div>
-                      <div class="col l-12 m-12 c-12">
-                        <i class="fas fa-phone info__contact-icon"></i>
-                        <div class="info__contact-phone">0364404072</div>
-                      </div>
-                      <div class="col l-12 m-12 c-12">
-                        <i class="fas fa-at info__contact-icon"></i>
-                        <div class="info__contact-email">
-                          nguyenngocthinh01@gmail.com
-                        </div>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                      <div class="info__item-btn">
+                        <div class="btn btn--white">My Résumé</div>
                       </div>
                     </div>
                   </div>
-                  <div class="col l-12 m-12 c-12">
-                    <div class="info__item-btn">
-                      <div class="btn btn--white">My Résumé</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Image -->
-          <div class="col l-5 m-6 c-12">
-            <div class="row about-me__item">
-              <div class="col l-8 m-11 c-10 about-me__image"></div>
-            </div>
-          </div>
-        </div>
-        <div id="skills" class="row no-gutters section-2 skills">
-          <div class="col l-12 m-12 c-12">
-            <div class="skills-heading">My Skill</div>
-          </div>
-          <div class="col l-6 m-6 c-12">
-            <div class="skills-card">
-              HTML/CSS
-              <div class="progress-circle" id="html-css-process">
-                <div class="outer">
-                  <div class="inner">
-                    <div class="number">0%</div>
-                  </div>
-                </div>
-                <svg>
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style="stop-color:#08ffe2; stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="80" cy="80" r="70"></circle>
-                </svg>
+            <div class="col l-5 m-6 c-12">
+              <div class="row about-me__item">
+                <div class="col l-8 m-11 c-10 about-me__image"></div>
               </div>
             </div>
-          </div>
-          <div class="col l-6 m-6 c-12">
-            <div class="skills-card">Javascript
-              <div class="progress-circle" id="js-process">
-                <div class="outer">
-                  <div class="inner">
-                    <div class="number">0%</div>
-                  </div>
-                </div>
-                <svg>
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style="stop-color:#f6b69a; stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="80" cy="80" r="70"></circle>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="col l-6 m-6 c-12">
-            <div class="skills-card">React Native
-              <div class="progress-circle" id="react-native-process">
-                <div class="outer">
-                  <div class="inner">
-                    <div class="number">0%</div>
-                  </div>
-                </div>
-                <svg>
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style="stop-color:#f6b69a; stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
-                    </linearGradient>
-                  </defs>                  
-                  <circle cx="80" cy="80" r="70"></circle>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="col l-6 m-6 c-12">
-            <div class="skills-card">Nodejs<
-              <div class="progress-circle" id="nodejs-process">
-                <div class="outer">
-                  <div class="inner">
-                    <div class="number">0%</div>
-                  </div>
-                </div>
-                <svg>
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style="stop-color:#f6b69a; stop-opacity:1" />
-                      <stop offset="100%" style="stop-color:#de4b25; stop-opacity:1" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="80" cy="80" r="70"></circle>
-                </svg>
-              </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer"></div>
+
+    <!-- skill -->
+    <div id="skills">
+      <div class="grid wide">
+        <div class="row no-gutters section-2 skills">
+          <div class="col l-12 m-12 c-12">
+            <div class="skills-heading">Skill</div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="row skills-card">
+              <div class="col l-6 m-6 c-12">
+                <div class="progress-circle" id="html-css-process">
+                  <div class="outer">
+                    <div class="inner">
+                      <div class="inner-content">
+                        <div class="inner-content__icon">
+                          <img
+                            src="./assets/images/html-css-svgrepo.svg"
+                            alt="Skill Icon"
+                          />
+                        </div>
+                        <div class="inner-content__number">0%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <svg>
+                    <defs>
+                      <linearGradient
+                        id="gradient-html"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: #ff7e5f; stop-opacity: 1"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: #feb47b; stop-opacity: 1"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <circle class="skill-card__html"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="col l-6 m-6 c-12">
+                <div class="skill-card__detail">
+                  Mức độ: hiểu các nguyên tắc cơ bản, thực hành với một số
+                  project nhóm và cá nhân
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="row skills-card">
+              <div class="col l-6 m-6 c-12">
+                <div class="progress-circle" id="js-process">
+                  <div class="outer">
+                    <div class="inner">
+                      <div class="inner-content">
+                        <div class="inner-content__icon">
+                          <img
+                            src="./assets/images/js-svgrepo-com.svg"
+                            alt="Skill Icon"
+                          />
+                        </div>
+                        <div class="inner-content__number">0%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <svg>
+                    <defs>
+                      <linearGradient
+                        id="gradient-js"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: #ffd700; stop-opacity: 1"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: #c8de00a9; stop-opacity: 1"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <circle class="skill-card__js"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="col l-6 m-6 c-12">
+                <div class="skill-card__detail">
+                  Mức độ: hiểu các nguyên tắc cơ bản, thực hành với một số
+                  project nhóm và cá nhân
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="row skills-card">
+              <div class="col l-6 m-6 c-12">
+                <div class="progress-circle" id="react-native-process">
+                  <div class="outer">
+                    <div class="inner">
+                      <div class="inner-content">
+                        <div class="inner-content__icon">
+                          <img
+                            src="./assets/images/react-svgrepo-com.svg"
+                            alt="Skill Icon"
+                          />
+                        </div>
+                        <div class="inner-content__number">0%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <svg>
+                    <defs>
+                      <linearGradient
+                        id="gradient-react"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: #6a82fbf3; stop-opacity: 1"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: #fc5c7cc7; stop-opacity: 1"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <circle class="skill-card__react"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="col l-6 m-6 c-12">
+                <div class="skill-card__detail">
+                  Mức độ: hiểu các nguyên tắc cơ bản, thực hành với một số
+                  project nhóm và cá nhân
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-6 m-6 c-12">
+            <div class="row skills-card">
+              <div class="col l-6 m-6 c-12">
+                <div class="progress-circle" id="nodejs-process">
+                  <div class="outer">
+                    <div class="inner">
+                      <div class="inner-content">
+                        <div class="inner-content__icon">
+                          <img
+                            src="./assets/images/nodejs-svgrepo-com.svg"
+                            alt="Skill Icon"
+                          />
+                        </div>
+                        <div class="inner-content__number">0%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <svg>
+                    <defs>
+                      <linearGradient
+                        id="gradient-nodejs"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop
+                          offset="0%"
+                          style="stop-color: #00c9ff; stop-opacity: 1"
+                        />
+                        <stop
+                          offset="100%"
+                          style="stop-color: #92fe9d; stop-opacity: 1"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <circle class="skill-card__nodejs"></circle>
+                  </svg>
+                </div>
+              </div>
+              <div class="col l-6 m-6 c-12">
+                <div class="skill-card__detail">
+                  Mức độ: hiểu các nguyên tắc cơ bản, thực hành với một số
+                  project nhóm và cá nhân
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="grid wide">
+        <div class="col l-12 m-6 c-6"></div>
+        <div class="col l-12 m-6 c-6"></div>
+        <div class="col l-12 m-6 c-6"></div>
+      </div>
+    </div>
   </body>
   <script src="./scripts/script.js"></script>
 </html>
