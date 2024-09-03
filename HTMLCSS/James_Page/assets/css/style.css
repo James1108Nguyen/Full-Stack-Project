@@ -2,6 +2,13 @@
   --first-primary-color: #fff;
   --second-primary-color: #f7eee3;
 }
+html {
+  font-size: 62.5%;
+}
+
+.bold-text {
+  font-weight: bold;
+}
 .space-between {
   justify-content: space-between !important;
 }
@@ -93,13 +100,6 @@
   color: #ababab;
 }
 
-/* Content */
-.content {
-  background-color: var(--second-primary-color);
-
-  /* background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f6eacb 100%); */
-  margin-top: var(--header-height);
-}
 .section-1,
 .section-2,
 .section-3 {
@@ -111,6 +111,7 @@
 
 #about-me {
   margin-top: var(--header-height);
+  background-color: var(--second-primary-color);
 }
 .about-me {
   display: flex;

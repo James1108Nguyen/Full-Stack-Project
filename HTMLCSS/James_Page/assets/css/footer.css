@@ -4,7 +4,7 @@
   font-size: 2rem;
   line-height: normal;
   padding: 75px 0;
-  background-color: var(--second-primary-color);
+  background-color: var(--first-primary-color);
 }
 
 .footer a:visited,
