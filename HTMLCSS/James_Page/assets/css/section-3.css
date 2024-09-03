@@ -4,6 +4,13 @@
 #project p {
   display: inline;
 }
+
+.row.project__card {
+  padding: 32px 0;
+}
+.row.project__card + .row.project__card {
+  border-top: 3px dashed #dfd7cc;
+}
 .project__card-title {
   font-size: 4rem;
   text-align: center;
