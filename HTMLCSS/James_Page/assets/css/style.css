@@ -109,6 +109,9 @@
   align-items: start;
 }
 
+#about-me {
+  margin-top: var(--header-height);
+}
 .about-me {
   display: flex;
   align-items: center;
