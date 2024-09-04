@@ -41,15 +41,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/animations.css" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/hero.css" />
-    <link rel="stylesheet" href="./assets/css/section-2.css" />
-    <link rel="stylesheet" href="./assets/css/section-3.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <div class="header">
@@ -92,14 +84,14 @@
         </div>
       </div>
     </div>
-    <!-- About me -->
-    <div id="about-me">
+    <!-- Home -->
+    <div id="home">
       <div class="grid wide">
-        <div class="row section-1 about-me">
+        <div class="row section-1 home">
           <div class="col l-7 m-6 c-12">
-            <div class="row about-me__item">
+            <div class="row home__item">
               <div class="col l-12 m-12 c-10">
-                <div class="row about-me__info">
+                <div class="row home__info">
                   <div class="col l-12 m-12 c-12">
                     <div class="info__h1">Hi!</div>
                   </div>
@@ -118,7 +110,7 @@
                         Call me James.
                         <br />
                         Constantly learning and perfecting skills with attention
-                        to detail and precision and and!
+                        to detail and precision!
                       </p>
                     </div>
                   </div>
@@ -144,7 +136,10 @@
                   </div>
                   <div class="col l-12 m-12 c-12">
                     <div class="info__item-btn">
-                      <div class="btn btn--white">My Résumé</div>
+                      <div class="btn btn--black">About Me</div>
+                    </div>
+                    <div class="info__item-btn">
+                      <div class="btn btn--yellow">My Résumé</div>
                     </div>
                   </div>
                 </div>
@@ -152,8 +147,38 @@
             </div>
           </div>
           <div class="col l-5 m-6 c-12">
-            <div class="row about-me__item">
-              <div class="col l-8 m-11 c-10 about-me__image"></div>
+            <div class="row home__item">
+              <div class="col l-8 m-11 c-10 home__image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skill">
+      <div class="grid wide">
+        <div class="row section-2 skill">
+          <div class="col l-12 m-12 c-12">
+            <div class="skill__heading">Skill</div>
+          </div>
+          <div class="col l-12 m-12 c-12">
+            <div class="skill__container">
+              <div class="skill__item">
+                <div class="skill-item__icon background-img-html"></div>
+                <div class="skill-item__name">HTML-5</div>
+              </div>
+              <div class="skill__item">
+                <div class="skill-item__icon background-img-css"></div>
+                <div class="skill-item__name">CSS-3</div>
+              </div>
+              <div class="skill__item">
+                <div class="skill-item__icon background-img-responsive"></div>
+                <div class="skill-item__name">Responsive Web Design</div>
+              </div>
+              <div class="skill__item">
+                <div class="skill-item__icon background-img-js"></div>
+                <div class="skill-item__name">Javascript</div>
+              </div>
             </div>
           </div>
         </div>
@@ -161,7 +186,7 @@
     </div>
 
     <!-- skill -->
-    <div id="skills">
+    <!-- <div id="skills">
       <div class="grid wide">
         <div class="row no-gutters section-2 skills">
           <div class="col l-12 m-12 c-12">
@@ -361,7 +386,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Project -->
     <div id="project">
@@ -678,7 +703,7 @@
           <div class="col l-2 m-4 c-6">
             <div class="row footer__section">
               <div class="col l-12 m-12 c-12">
-                <a href="#about-me">About me</a>
+                <a href="#home">About me</a>
               </div>
               <div class="col l-12 m-12 c-12">
                 <a href="#skills">Project</a>

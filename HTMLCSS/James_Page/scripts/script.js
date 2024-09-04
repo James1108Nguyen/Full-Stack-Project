@@ -176,11 +176,11 @@ function initProgressCircle(skill, progressPercent) {
   window.addEventListener("resize", updateCircleDimensions);
 }
 
-// Khởi tạo tiến trình cho các kỹ năng
-initProgressCircle("html-css", 68);
-initProgressCircle("js", 80);
-initProgressCircle("nodejs", 68);
-initProgressCircle("react-native", 68);
+// // Khởi tạo tiến trình cho các kỹ năng
+// initProgressCircle("html-css", 68);
+// initProgressCircle("js", 80);
+// initProgressCircle("nodejs", 68);
+// initProgressCircle("react-native", 68);
 
 // Ví dụ sử dụng Intersection Observer API
 const section = document.querySelector(".section-2");
