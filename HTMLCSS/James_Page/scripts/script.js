@@ -201,3 +201,51 @@ const observer = new IntersectionObserver(
 ); // Tỉ lệ phần tử xuất hiện (50%)
 
 observer.observe(section);
+
+// =================================
+// Slider
+let currentSlideIndex = 0;
+let autoSlideInterval;
+
+// Hàm hiển thị slide
+function showSlides(sliderId, index) {
+  let slider = document.getElementById(sliderId);
+  let slides = slider.getElementsByClassName("slide");
+  let dots = slider.getElementsByClassName("dot");
+
+  if (index >= slides.length) {
+    slider.currentSlideIndex = 0;
+  } else if (index < 0) {
+    slider.currentSlideIndex = slides.length - 1;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slider.currentSlideIndex].style.display = "flex";
+  dots[slider.currentSlideIndex].className += " active";
+}
+
+function autoSlide(sliderId) {
+  let slider = document.getElementById(sliderId);
+  slider.currentSlideIndex = 0;
+  slider.autoSlideInterval = setInterval(function () {
+    moveSlide(sliderId, 1);
+  }, 3000);
+}
+
+function currentSlide(sliderId, n) {
+  clearInterval(document.getElementById(sliderId).autoSlideInterval);
+  let slider = document.getElementById(sliderId);
+  showSlides(sliderId, (slider.currentSlideIndex = n - 1));
+  autoSlide(sliderId);
+}
+
+// Khởi tạo slider cho project 1
+autoSlide("slider-project-1");
+// autoSlide('slider-project-2');

@@ -20,7 +20,7 @@
   line-height: normal;
 }
 .home__image {
-  background-image: url(../images/home.jpg);
+  background-image: url(../images/about-me-webp.webp);
   height: 400px;
   background-size: cover; /* Để hình ảnh phủ kín thẻ div */
   background-position: center; /* Căn giữa hình ảnh trong thẻ div */

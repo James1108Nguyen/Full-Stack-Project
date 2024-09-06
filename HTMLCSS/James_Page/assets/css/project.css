@@ -8,8 +8,21 @@
 .row.project__card {
   padding: 32px 0;
 }
+.project-card__detail {
+  background-color: var(--first-primary-color);
+  border-radius: 15px 0px 0px 15px;
+  height: 100%;
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: center;
+}
+.project-card__detail > div {
+  flex-basis: 100%;
+}
 .row.project__card + .row.project__card {
-  border-top: 3px dashed #dfd7cc;
+  /* border-top: 3px dashed #dfd7cc; */
 }
 .project__card-title {
   font-size: 4rem;
@@ -18,13 +31,10 @@
   padding: 40px 0 35px 0;
   text-transform: uppercase;
 }
-.project-card__img-slider img {
-  width: 100%;
-  animation: fadeInLeft 1.5s linear;
-}
 .project-card__name-detail {
   font-size: 2.4rem;
   line-height: normal;
+  padding-top: 20px;
 }
 .project-card__detail > div + div {
   margin-top: 15px;
@@ -110,4 +120,59 @@
 
 .tech-tag.tag--nodejs .tag__name {
   color: #4a903d;
+}
+
+/* Image Slider */
+
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 400px; /* Chiều cao cố định */
+  min-height: 300px; /* Chiều cao tối thiểu */
+  max-height: 600px; /* Chiều cao tối đa */
+  background-color: #f7f6f2;
+  border-radius: 0px 15px 15px 0px;
+}
+.slider,
+.slide,
+.slide img {
+  height: 100%;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.dots {
+  text-align: center;
+  position: relative;
+  margin-top: -30px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:hover {
+  background-color: #717171;
 }
