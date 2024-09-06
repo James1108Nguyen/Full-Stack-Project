@@ -6,6 +6,10 @@
   background-color: #ffffff;
   z-index: 999;
 }
+.header.blur {
+  backdrop-filter: blur(5px); /* Áp dụng hiệu ứng mờ */
+  background-color: rgba(255, 255, 255, 0.6); /* Nền mờ hơn */
+}
 
 .nav {
   display: block;

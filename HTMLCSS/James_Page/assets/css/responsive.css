@@ -24,7 +24,7 @@
   }
   /* .about-me .info__name-lagre {
   } */
-  .section-1 > div + div {
+  .home > div + div {
     padding-top: 40px;
   }
   .about-me__image::before {

@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <div class="header">
       <div class="grid wide">
         <div class="nav">
@@ -87,7 +88,7 @@
     <!-- Home -->
     <div id="home">
       <div class="grid wide">
-        <div class="row section-1 home">
+        <div class="row home">
           <div class="col l-7 m-6 c-12">
             <div class="row home__item">
               <div class="col l-12 m-12 c-10">
@@ -148,23 +149,94 @@
           </div>
           <div class="col l-5 m-6 c-12">
             <div class="row home__item">
-              <div class="col l-8 m-11 c-10 home__image"></div>
+              <div class="col l-12 m-12 c-11">
+                <div class="home__image"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Home -->
+
+    <!-- About -->
     <div id="about">
       <div class="grid wide">
-        <div class="row section-1 about"></div>
+        <div class="row about">
+          <div class="col l-12 m-12 c-12 justify-center">
+            <div class="heading-section">About</div>
+          </div>
+          <div class="col l-5 m-6 c-12">
+            <div class="row about__item">
+              <div class="col l-12 m-12 c-11">
+                <div class="about__image"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-7 m-6 c-12">
+            <div class="row about__item">
+              <div class="col l-12 m-12 c-12">
+                <div class="about__info">
+                  <div class="about-info__detail">
+                    I am a front-end web developer with the goal of becoming a
+                    full-stack developer and beyond. I am currently a senior
+                    student majoring in Software Engineering at the University
+                    of Information Technology (UIT).
+                    <br />
+                    During my studies, I have gained fundamental knowledge in
+                    Data Structures and Algorithms (DSA) and Object-Oriented
+                    Programming (OOP), and I have been introduced to various
+                    programming languages and technologies across multiple
+                    platforms through small academic projects. These include
+                    building full-stack web applications using React.js,
+                    Node.js, MongoDB, developing mobile applications with React
+                    Native, creating Windows applications with C#, and working
+                    with Python for Machine Learning.
+                    <br />
+                    This experience has helped me develop the ability to quickly
+                    adapt to new technologies, libraries, and working methods.
+                    Additionally, I have strong communication and teamwork
+                    skills. I am always meticulous, detail-oriented, and have a
+                    spirit of continuous learning, improving both technical
+                    skills and soft skills.
+                    <br />
+                    However, my current weakness is that I have limited
+                    experience with real-world projects in a professional
+                    environment, especially in managing large projects and
+                    handling complex real-life problems. Therefore, I am
+                    actively seeking internship opportunities at companies and
+                    businesses. I believe this will be a valuable chance to work
+                    with experienced professionals, allowing me to grow both in
+                    terms of expertise and other skills.
+                    <br />
+                    Personal interests: I enjoy listening to music, DIY
+                    projects, and having coffee early in the morning.
+                  </div>
+
+                  <h3>A few quick facts about me:</h3>
+                  <div class="about-info__quick">
+                    Graduating student majoring in Software Engineering at UIT.
+                    <br />
+                    Aspiring to become a web engineer. <br />
+                    Quick to adapt to new technologies. <br />
+                    Strong teamwork skills, with attention to detail and
+                    responsibility in every task. - Always eager to learn and
+                    improve myself. <br />
+                    Weakness: Limited real-world experience. <br />
+                    Personal hobbies: Listening to music and having coffee in
+                    the early morning.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Skills -->
     <div id="skill">
       <div class="grid wide">
-        <div class="row section-2 skill">
+        <div class="row skill">
           <div class="col l-12 m-12 c-12">
             <div class="skill__heading">Skill</div>
           </div>
@@ -195,7 +267,7 @@
     <!-- Project -->
     <div id="project">
       <div class="grid wide">
-        <div class="project section-3">
+        <div class="project">
           <div class="row no-gutters project__card">
             <div class="col l-6 c-6 m-12">
               <div class="project-card__detail">
@@ -278,10 +350,22 @@
                     </div>
                   </div>
                   <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-1', 1)"
+                    ></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-1', 2)"
+                    ></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-1', 3)"
+                    ></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-1', 4)"
+                    ></span>
                   </div>
                 </div>
               </div>
@@ -369,10 +453,22 @@
                     </div>
                   </div>
                   <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-2', 1)"
+                    ></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-2', 2)"
+                    ></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-2', 3)"
+                    ></span>
+                    <span
+                      class="dot"
+                      onclick="currentSlide('slider-project-2', 4)"
+                    ></span>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,10 @@
-.section-1.home {
+.home {
   align-items: start;
 }
 
 #home {
   margin-top: var(--header-height);
-  background-color: var(--second-primary-color);
+  background-color: var(--first-primary-color);
 }
 .home {
   display: flex;
@@ -20,13 +20,11 @@
   line-height: normal;
 }
 .home__image {
-  background-image: url(../images/about-me-webp.webp);
-  height: 400px;
+  background-image: url(../images/isometric-laptop-with-web-design-application.gif);
+  height: 500px;
   background-size: cover; /* Để hình ảnh phủ kín thẻ div */
   background-position: center; /* Căn giữa hình ảnh trong thẻ div */
   background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-  border-radius: 20px; /* Tạo góc bo tròn, tùy chọn */
-  border: 10px solid #c7c7b2;
   animation: fadeInLeft 3.5s linear;
 }
 

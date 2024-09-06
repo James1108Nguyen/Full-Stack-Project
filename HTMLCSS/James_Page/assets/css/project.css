@@ -146,17 +146,30 @@
 }
 
 .slide {
+  position: relative; /* Đặt relative để các slide con có thể dùng absolute */
+  position: absolute; /* Đảm bảo các slide nằm chồng lên nhau */
+  top: 0;
+  left: 0;
   min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out, visibility 0s;
+  /* order: -1; Là một cách hay*/
 }
 
 .slide img {
   width: 80%;
   height: auto;
   object-fit: cover;
-  transition: all 0.5s ease-in-out;
 }
 .dots {
   text-align: center;
@@ -165,8 +178,9 @@
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  opacity: 86%;
+  height: 12px;
+  width: 12px;
   margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
@@ -174,5 +188,9 @@
   transition: background-color 0.6s ease;
 }
 .dot:hover {
+  background-color: #717171;
+  opacity: 100%;
+}
+.dot.active {
   background-color: #717171;
 }

@@ -1,6 +1,3 @@
-.skill {
-}
-
 .skill__heading {
   font-size: 2.4rem;
   line-height: 2.4rem;
@@ -19,10 +16,11 @@
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: var(--second-primary-color);
+  background-color: var(--first-primary-color);
   width: 8rem;
   height: 8rem;
   border-radius: 4rem;
+  border: #cfcfcf solid 1px;
   margin: auto;
 }
 .skill-item__name {

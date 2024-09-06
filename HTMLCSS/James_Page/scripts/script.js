@@ -1,5 +1,18 @@
 // File: script.js
 
+// Blur Header
+window.addEventListener("scroll", function () {
+  const header = document.getElementsByClassName("header");
+
+  // Kiểm tra vị trí cuộn của trang
+  if (window.scrollY > 50) {
+    // Khi cuộn xuống hơn 50px
+    header[0].classList.add("blur"); // Thêm class blur
+  } else {
+    header[0].classList.remove("blur"); // Bỏ class blur khi quay lại đầu trang
+  }
+});
+
 function updateTime() {
   const options = {
     timeZone: "Asia/Ho_Chi_Minh",
@@ -98,154 +111,59 @@ window.onload = function () {
 // Gọi hàm updateWeather mỗi 10 phút (600000 ms) để cập nhật nhiệt độ
 setInterval(updateWeather, 6000000);
 
-// Process funcition (section2-skills)
-function initProgressCircle(skill, progressPercent) {
-  // Lấy phần tử SVG circle và số phần trăm từ DOM
-  let circle = document.querySelector(`#${skill}-process circle`);
-  let number = document.querySelector(
-    `#${skill}-process .inner-content__number`
-  );
-
-  // Hàm tính toán chu vi và cập nhật các giá trị stroke
-  function updateCircleDimensions() {
-    // Lấy giá trị kích thước và độ dày viền từ CSS
-    let size = getComputedStyle(document.documentElement)
-      .getPropertyValue("--process-circle-size")
-      .trim()
-      .replace("px", ""); // Loại bỏ đơn vị 'px' để tính toán
-
-    let strokeWidth = getComputedStyle(document.documentElement)
-      .getPropertyValue("--progress-circle-thickness")
-      .trim()
-      .replace("px", ""); // Loại bỏ đơn vị 'px' để tính toán
-
-    let radius = size / 2 - strokeWidth / 2; // Tính bán kính dựa trên độ dày viền
-    let circumference = 2 * Math.PI * radius; // Chu vi của vòng tròn
-
-    // Thiết lập các giá trị stroke cho vòng tròn
-    circle.setAttribute("r", radius); // Cập nhật bán kính
-    circle.style.strokeDasharray = `${circumference}`;
-    circle.style.strokeDashoffset = `${circumference}`;
-
-    // Tính toán offset dựa trên giá trị phần trăm hiện tại
-    let offset = circumference - (counter / 100) * circumference;
-    circle.style.strokeDashoffset = offset;
-  }
-
-  // Đặt giá trị ban đầu cho biến điều khiển tiến trình
-  let counter = 0;
-
-  function updateProgress() {
-    // Điều chỉnh tốc độ thay đổi dựa trên vị trí hiện tại
-    let speedFactor = (progressPercent - counter) / 10;
-    speedFactor = Math.max(speedFactor, 0.5); // Đảm bảo tốc độ không quá nhỏ
-
-    // Cập nhật counter dựa trên hướng tăng
-    counter += speedFactor;
-
-    // Hiển thị phần trăm tiến trình
-    number.innerHTML = `${Math.round(counter)}%`;
-
-    // Tính toán và thiết lập offset dựa trên counter hiện tại
-    let size = getComputedStyle(document.documentElement)
-      .getPropertyValue("--process-circle-size")
-      .trim()
-      .replace("px", "");
-    let strokeWidth = getComputedStyle(document.documentElement)
-      .getPropertyValue("--progress-circle-thickness")
-      .trim()
-      .replace("px", "");
-    let radius = size / 2 - strokeWidth / 2;
-    let circumference = 2 * Math.PI * radius;
-    let offset = circumference - (counter / 100) * circumference;
-    circle.style.strokeDashoffset = offset;
-
-    // Kiểm tra điều kiện để dừng khi đạt đến phần trăm mục tiêu
-    if (counter >= progressPercent) {
-      return; // Dừng khi đã đạt đến giá trị mục tiêu
-    }
-
-    // Gọi lại hàm để tạo loop
-    requestAnimationFrame(updateProgress);
-  }
-
-  // Bắt đầu quá trình cập nhật tiến trình
-  updateProgress();
-
-  // Lắng nghe sự kiện resize để cập nhật kích thước vòng tròn mà không khởi động lại từ đầu
-  window.addEventListener("resize", updateCircleDimensions);
-}
-
-// // Khởi tạo tiến trình cho các kỹ năng
-// initProgressCircle("html-css", 68);
-// initProgressCircle("js", 80);
-// initProgressCircle("nodejs", 68);
-// initProgressCircle("react-native", 68);
-
-// Ví dụ sử dụng Intersection Observer API
-const section = document.querySelector(".section-2");
-
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        console.log("Section đã lướt tới!");
-        initProgressCircle("html-css", 68);
-        initProgressCircle("js", 80);
-        initProgressCircle("nodejs", 68);
-        initProgressCircle("react-native", 68);
-      }
-    });
-  },
-  { threshold: 0.5 }
-); // Tỉ lệ phần tử xuất hiện (50%)
-
-observer.observe(section);
-
-// =================================
+// =====================================================================
 // Slider
+// =====================================================================
 let currentSlideIndex = 0;
 let autoSlideInterval;
 
 // Hàm hiển thị slide
 function showSlides(sliderId, index) {
-  let slider = document.getElementById(sliderId);
-  let slides = slider.getElementsByClassName("slide");
-  let dots = slider.getElementsByClassName("dot");
+  const slider = document.getElementById(sliderId);
+  const slides = slider.getElementsByClassName("slide");
+  const dots = slider.getElementsByClassName("dot");
 
   if (index >= slides.length) {
     slider.currentSlideIndex = 0;
   } else if (index < 0) {
     slider.currentSlideIndex = slides.length - 1;
+  } else {
+    slider.currentSlideIndex = index;
   }
 
+  // Ẩn tất cả các slide
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].classList.remove("active");
   }
 
+  // Bỏ active class của tất cả các dots
   for (let i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].classList.remove("active");
   }
 
-  slides[slider.currentSlideIndex].style.display = "flex";
-  dots[slider.currentSlideIndex].className += " active";
+  // Hiển thị slide hiện tại và thêm active class vào dot tương ứng
+  slides[slider.currentSlideIndex].classList.add("active");
+
+  dots[slider.currentSlideIndex].classList.add("active");
 }
 
+// Tự động chuyển slide
 function autoSlide(sliderId) {
-  let slider = document.getElementById(sliderId);
+  const slider = document.getElementById(sliderId);
   slider.currentSlideIndex = 0;
+
+  // Tự động chuyển slide mỗi 3 giây
   slider.autoSlideInterval = setInterval(function () {
-    moveSlide(sliderId, 1);
+    showSlides(sliderId, slider.currentSlideIndex + 1);
   }, 3000);
 }
 
+// Hiển thị slide hiện tại và dừng tự động chuyển khi người dùng tương tác
 function currentSlide(sliderId, n) {
-  clearInterval(document.getElementById(sliderId).autoSlideInterval);
-  let slider = document.getElementById(sliderId);
-  showSlides(sliderId, (slider.currentSlideIndex = n - 1));
-  autoSlide(sliderId);
+  clearInterval(document.getElementById(sliderId).autoSlideInterval); // Dừng tự động chuyển khi người dùng thao tác
+  showSlides(sliderId, n - 1);
+  autoSlide(sliderId); // Tiếp tục tự động chuyển sau khi người dùng tương tác
 }
 
-// Khởi tạo slider cho project 1
+// Khởi tạo slider cho các project khác nhau
 autoSlide("slider-project-1");
-// autoSlide('slider-project-2');
