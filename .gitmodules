@@ -5,3 +5,6 @@
 [submodule "HTMLCSS/W3-Band-Website-Project"]
 	path = HTMLCSS/W3-Band-Website-Project
 	url = https://github.com/James1108Nguyen/W3-Band-Website-Project.git
+[submodule "James-Portable-Lab"]
+	path = James-Portable-Lab
+	url = https://github.com/James1108Nguyen/James-Portable-Lab.git
