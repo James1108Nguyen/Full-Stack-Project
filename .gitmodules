@@ -8,3 +8,6 @@
 [submodule "James-Portable-Lab"]
 	path = James-Portable-Lab
 	url = https://github.com/James1108Nguyen/James-Portable-Lab.git
+[submodule "HTMLCSS/James_Page"]
+	path = HTMLCSS/James_Page
+	url = https://github.com/James1108Nguyen/James-Portable-Lab.git
